@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <div class="row">
+        <div class="col"><h2>Informações do post</h2></div>
+        <div class="col text-right"><a href="/" class="badge badge-primary"><h5>Voltar</h5></a></div>
+      </div>
+    </div>
+
+    <div class="card-body">
+      <h5 class="card-title"><%= @post.title %></h5>
+      <p class="card-text"><%= @post.body %></p>
+      <%= link_to "Editar", edit_post_path(@post), :class => 'btn btn-outline-primary' %>
+      <%= link_to "Deletar", post_path(@post), method: :delete, data:{confirm: 'Tem certeza?'}, :class => 'btn btn-outline-danger' %>
+    </div>
+  </div>
+</div>
