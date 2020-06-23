@@ -1,0 +1,1 @@
+# rubyonrails_simpleblog
